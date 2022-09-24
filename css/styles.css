@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700;800&display=swap');
+
+:root{
+    --ff: 'Karla', sans-serif;
+    --fs: 16px;
+    --fw-regular: 400;
+    --fw-semibold: 500;
+    --fw-bold: 700;
+    --fw-extrabold: 800;
+
+    --clr-black: #1C1C1C;
+    --clr-navy-blue: #1F2937;
+    --clr-blue: #273549;
+    --clr-darkergreen: #10B981;
+    --clr-green: #4ADF86;
+    --clr-grey: #D5D4D8;
+    --clr-white: #FFFFFF;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    padding-inline: 15px;
+
+    background-color: var(--clr-black);
+    font-family: var(--ff);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background: var(--clr-navy-blue);
+    padding: 100px 25px 50px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.text-div{
+    margin-bottom: 20px;
+    line-height: 1;
+}
+
+h1{
+    font-weight: var(--fw-extrabold );
+    font-size: 1.8rem;
+    color: var(--clr-white);
+}
+
+#emphasis-text{
+    color: var(--clr-green);
+    margin-bottom: 1rem;
+}
+
+#subtitle{
+    color: var(--clr-grey);
+}
+
+.btn-div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#generate-btn{
+    height: 35px;
+
+    border: none;
+    border-radius: 5px;
+    background-color: var(--clr-darkergreen);
+    color: var(--clr-white);
+    font-weight: var(--fw-bold);
+
+    padding: 5px 10px;
+    margin-block: 30px;
+}
+
+#generate-btn:is(:hover, :active){
+    background-color: var(--clr-green);
+    color: var(--clr-navy-blue);
+    cursor: pointer;
+    transition: 0.15s linear;
+}
+
+#length-input{
+    width: 20%;
+    height: 30px;
+
+    border: none;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+
+.passwords-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    margin-top: 20px;
+}
+
+.passwords-field{
+    width: 70%;
+    height: 2rem;
+    background-color: var(--clr-blue);
+    border-radius: 4px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.password{
+    color: var(--clr-green);
+}
+
+@media (min-width: 860px){
+    .container{
+        width: 700px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-div{
+        display: flex;
+        gap: 50px;
+    }
+
+    #generate-btn{
+        width: 200px;
+        height: 40px;
+    }
+
+    .passwords-div{
+        display: flex;
+        flex-direction: row;
+
+        width: 70%;
+    }
+}

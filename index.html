@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="text-div">
+          <h1>Generate a</h1>
+          <h1 id="emphasis-text">random password</h1>
+          <p id="subtitle">Never use an insecure password again</p>
+        </div>
+        <div class="btn-div">
+          <button id="generate-btn" onclick="generatePassword()">
+            Generate passwords
+          </button>
+          <input
+            type="number"
+            min="1"
+            max="20"
+            name="length-input"
+            id="length-input"
+          />
+        </div>
+        <div class="passwords-div">
+          <div class="passwords-field">
+            <p class="password" id="password-one"></p>
+          </div>
+          <div class="passwords-field">
+            <p class="password" id="password-two"></p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
